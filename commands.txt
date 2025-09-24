@@ -1,0 +1,167 @@
+git clone https://github.com/tashfiaanoor/qtm350-quiz01
+Cloning into 'qtm350-quiz01'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (8/8), done.
+➜  ~ git:(main) ✗ cd qtm350-quiz01
+➜  qtm350-quiz01 git:(main) touch commands.txt
+➜  qtm350-quiz01 git:(main) ✗ git checkout -b feature-upd
+ate
+Switched to a new branch 'feature-update'
+➜  qtm350-quiz01 git:(feature-update) ✗ mkdir reports
+➜  qtm350-quiz01 git:(feature-update) ✗ cd reports
+➜  reports git:(feature-update) ✗ touch summary.md
+➜  reports git:(feature-update) ✗ echo "This document provides a summary of the project updates." >> summary.md
+➜  reports git:(feature-update) ✗ git add .
+➜  reports git:(feature-update) ✗ git commit -m "Add repo
+rts directory."
+[feature-update b75db74] Add reports directory.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 reports/summary.md
+➜  reports git:(feature-update) ✗ touch ./{file1,file2,fi
+le3}.txt
+➜  reports git:(feature-update) ✗ ls -lh
+total 8
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:11 file1.txt
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:11 file2.txt
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:11 file3.txt
+-rw-r--r--  1 tashfianoor  staff    57B Sep 24 16:10 summary.md
+➜  reports git:(feature-update) ✗ cd ../
+➜  qtm350-quiz01 git:(feature-update) ✗ ls -lh
+total 8
+-rw-r--r--  1 tashfianoor  staff   3.3K Sep 24 16:06 README.md
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:07 commands.txt
+drwxr-xr-x  3 tashfianoor  staff    96B Sep 24 16:06 data
+drwxr-xr-x  3 tashfianoor  staff    96B Sep 24 16:06 docs
+drwxr-xr-x  6 tashfianoor  staff   192B Sep 24 16:11 reports
+drwxr-xr-x  5 tashfianoor  staff   160B Sep 24 16:06 scripts
+➜  qtm350-quiz01 git:(feature-update) ✗ rm ./data/raw-data.csv ./data/inp
+ut-data.csv
+rm: ./data/input-data.csv: No such file or directory
+➜  qtm350-quiz01 git:(feature-update) ✗ cd data
+➜  data git:(feature-update) ✗ rm ./raw-data.csv ./input-data.csv
+rm: ./raw-data.csv: No such file or directory
+rm: ./input-data.csv: No such file or directory
+➜  data git:(feature-update) ✗ ls -lh
+total 0
+➜  data git:(feature-update) ✗ cd ../ 
+➜  qtm350-quiz01 git:(feature-update) ✗ ls -alh
+total 8
+drwxr-xr-x   9 tashfianoor  staff   288B Sep 24 16:09 .
+drwxr-x---+ 51 tashfianoor  staff   1.6K Sep 24 16:13 ..
+drwxr-xr-x  13 tashfianoor  staff   416B Sep 24 16:10 .git
+-rw-r--r--   1 tashfianoor  staff   3.3K Sep 24 16:06 README.md
+-rw-r--r--   1 tashfianoor  staff     0B Sep 24 16:07 commands.txt
+drwxr-xr-x   2 tashfianoor  staff    64B Sep 24 16:12 data
+drwxr-xr-x   3 tashfianoor  staff    96B Sep 24 16:06 docs
+drwxr-xr-x   6 tashfianoor  staff   192B Sep 24 16:11 reports
+drwxr-xr-x   5 tashfianoor  staff   160B Sep 24 16:06 scripts
+➜  qtm350-quiz01 git:(feature-update) ✗ cd data
+➜  data git:(feature-update) ✗ ls
+➜  data git:(feature-update) ✗ ls -l
+total 0
+➜  data git:(feature-update) ✗ ls -alh
+total 0
+drwxr-xr-x  2 tashfianoor  staff    64B Sep 24 16:12 .
+drwxr-xr-x  9 tashfianoor  staff   288B Sep 24 16:09 ..
+➜  data git:(feature-update) ✗ mv data/raw-data.csv data/input-data.csv
+mv: rename data/raw-data.csv to data/input-data.csv: No such file or directory
+➜  data git:(feature-update) ✗ cd ../
+➜  qtm350-quiz01 git:(feature-update) ✗ cd scripts
+➜  scripts git:(feature-update) ✗ ls -lh
+total 0
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:06 01-setup.py
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:06 02-data-cleaning.py
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:06 03-data-modelling.py
+➜  scripts git:(feature-update) ✗ cd ../
+➜  qtm350-quiz01 git:(feature-update) ✗ cd data
+➜  data git:(feature-update) ✗ ls -lh
+total 0
+➜  data git:(feature-update) ✗ touch raw-data.csv
+➜  data git:(feature-update) ✗ rm ./raw-data.csv ./input-data.csv
+rm: ./input-data.csv: No such file or directory
+➜  data git:(feature-update) ✗ ls -lh
+total 0
+➜  data git:(feature-update) ✗ cd ../
+➜  qtm350-quiz01 git:(feature-update) ✗ find ./ -iname "raw-data.csv"
+➜  qtm350-quiz01 git:(feature-update) ✗ tree qtm350-quiz01
+qtm350-quiz01  [error opening dir]
+
+0 directories, 0 files
+➜  qtm350-quiz01 git:(feature-update) ✗ 
+➜  qtm350-quiz01 git:(feature-update) ✗ tree data
+data
+
+0 directories, 0 files
+➜  qtm350-quiz01 git:(feature-update) ✗ tree docs
+docs
+└── documentation.md
+
+1 directory, 1 file
+➜  qtm350-quiz01 git:(feature-update) ✗ tree scripts
+scripts
+├── 01-setup.py
+├── 02-data-cleaning.py
+└── 03-data-modelling.py
+
+1 directory, 3 files
+➜  qtm350-quiz01 git:(feature-update) ✗ cd data
+➜  data git:(feature-update) ✗ touch raw-data.csv
+➜  data git:(feature-update) ✗ ls -lh
+total 0
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:19 raw-data.csv
+➜  data git:(feature-update) ✗ rm ./raw-data.csv ./input-data.csv
+rm: ./input-data.csv: No such file or directory
+➜  data git:(feature-update) ✗ ls -lh
+total 0
+➜  data git:(feature-update) ✗ touch raw-data.csv
+➜  data git:(feature-update) ✗ mv ./raw-data.csv ./input-data.csv
+➜  data git:(feature-update) ✗ ls -lh
+total 0
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:20 input-data.csv
+➜  data git:(feature-update) ✗ cd ../
+➜  qtm350-quiz01 git:(feature-update) ✗ cd scripts
+➜  scripts git:(feature-update) ✗ mkdir backup && cp ./*.py ./backup
+➜  scripts git:(feature-update) ✗ ls -lh
+total 0
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:06 01-setup.py
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:06 02-data-cleaning.py
+-rw-r--r--  1 tashfianoor  staff     0B Sep 24 16:06 03-data-modelling.py
+drwxr-xr-x  5 tashfianoor  staff   160B Sep 24 16:23 backup
+➜  scripts git:(feature-update) ✗ cd ../
+➜  qtm350-quiz01 git:(feature-update) ✗ cd docs
+➜  docs git:(feature-update) ✗ rm documentation.md
+➜  docs git:(feature-update) ✗ ls -lh
+total 0
+➜  docs git:(feature-update) ✗ git add .
+➜  docs git:(feature-update) ✗ git commit -m "Update project files"
+[feature-update 60d5f98] Update project files
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 docs/documentation.md
+➜  docs git:(feature-update) ✗ cd ../
+➜  qtm350-quiz01 git:(feature-update) ✗ touch .gitignore
+➜  qtm350-quiz01 git:(feature-update) ✗ echo "temp/
+dataset0?.csv" >> .gitignore
+➜  qtm350-quiz01 git:(feature-update) ✗ cat .gitignore
+temp/
+dataset0?.csv
+➜  qtm350-quiz01 git:(feature-update) ✗ git add . && git commit -m "Add .
+gitignore file"
+[feature-update 4366f0d] Add .gitignore file
+ 9 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ rename data/raw-data.csv => commands.txt (100%)
+ create mode 100644 data/input-data.csv
+ create mode 100644 reports/file1.txt
+ create mode 100644 reports/file2.txt
+ create mode 100644 reports/file3.txt
+ create mode 100644 scripts/backup/01-setup.py
+ create mode 100644 scripts/backup/02-data-cleaning.py
+ create mode 100644 scripts/backup/03-data-modelling.py
+➜  qtm350-quiz01 git:(feature-update) git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+➜  qtm350-quiz01 git:(main) git merge feature-update
+
